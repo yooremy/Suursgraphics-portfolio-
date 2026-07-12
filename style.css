@@ -1,0 +1,187 @@
+/* Premium Reset & Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+}
+
+/* Deep, High-End Dark Palette */
+body {
+    background-color: #08090b;
+    color: #f1f2f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Official Sticky Navigation */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(8, 9, 11, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1.2rem 1.5rem;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #00e5ff; /* Cyan Electric Accent */
+}
+
+.nav-badge {
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    color: #8f94a0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0.3rem 0.7rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+/* Elegant Hero Banner */
+.hero-section {
+    text-align: center;
+    max-width: 700px;
+    margin: 4rem auto 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.hero-section h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-section p {
+    color: #8f94a0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.divider {
+    width: 40px;
+    height: 3px;
+    background-color: #00e5ff;
+    margin: 1.5rem auto 0 auto;
+    border-radius: 2px;
+}
+
+/* Premium Dynamic Showcase Grid */
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1.5rem 5rem 1.5rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+/* High-Appeal Design Cards */
+.card {
+    background-color: #121318;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(0, 229, 255, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    background-color: #1a1c23;
+}
+
+.card-info {
+    padding: 1.5rem;
+    background: linear-gradient(180deg, #121318 0%, #0e0f13 100%);
+}
+
+.card-info h3 {
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+
+.card-info span {
+    display: inline-block;
+    background-color: rgba(0, 229, 255, 0.08);
+    color: #00e5ff;
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Professional Corporate Footer */
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 3rem 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    background-color: #0b0c0f;
+}
+
+.footer-content p {
+    color: #525866;
+    font-size: 0.9rem;
+}
+
+.footer-subtext {
+    color: #3b3f4a !important;
+    font-size: 0.75rem !important;
+    margin-top: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive Grid for iPhone 8 Screen sizes */
+@media (max-width: 480px) {
+    .hero-section h2 {
+        font-size: 1.8rem;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
